@@ -4,11 +4,12 @@ pipeline {
     
     environment {
         MSR_FQDN_PORT='drm2cn4nlzkuglbjr-kzrpc9tqwgakxhg6t.labs.strigo.io:4443'
-
+    }
     stages {
         stage('Build') {
             environment {
                 MSR_ACCESS_KEY = credentials('jenkins-msr-access-token')
+
         MAJORMINOR = '0.0'
             }
             steps {
