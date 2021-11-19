@@ -3,8 +3,7 @@ pipeline {
     agent any    
     
     environment {
-        MSR_FQDN_PORT='drm2cn4nlzkuglbjr-kzrpc9tqwgakxhg6t.labs.strigo.io:4443/admin/my-jenkins:4443'
-    }
+        MSR_FQDN_PORT='drm2cn4nlzkuglbjr-kzrpc9tqwgakxhg6t.labs.strigo.io:4443'
 
     stages {
         stage('Build') {
